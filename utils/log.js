@@ -48,10 +48,10 @@ if (theme.toLowerCase() === 'blue') {
 module.exports = (text, type) => {
   switch (type) {
     case 'warn':
-      process.stderr.write(error(`\r[ ERROR ] `) + text + '\n');
+      process.stderr.write(error(`\r[ MARIN ] `) + text + '\n');
       break;
     case 'error':
-      console.log(chalk.bold.hex("#ff0000").bold(`[ ERROR ] `) + text + '\n');
+      console.log(chalk.bold.hex("#ff0000").bold(`[ MARIN ] `) + text + '\n');
       break;
     case 'load':
       console.log(co(`[ NEW USER ] `) + text + '\n');
@@ -74,13 +74,13 @@ module.exports.warn = (text, type) => {
 module.exports.loader = (data, option) => {
   switch (option) {
     case 'warn':
-      process.stderr.write(co(`[ SYSTEM ]`), data + '\n');
+      process.stderr.write(co(`[ MARIN ]`), data + '\n');
       break;
     case 'error':
-      process.stderr.write(chalk.hex("#ff0000")(`\r[ SYSTEM ] `) + data + '\n');
+      process.stderr.write(chalk.hex("#ff0000")(`\r[ MARIN ] `) + data + '\n');
       break;
     default:
-      console.log(co(`[ SYSTEM ]`), data);
+      console.log(co(`[ MARIN ]`), data);
       break;
   }
 };

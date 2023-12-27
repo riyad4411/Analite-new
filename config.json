@@ -9,23 +9,22 @@
   "UPTIME": 200,
   "commandDisabled": [],
   "eventDisabled": [],
-  "BOTNAME": "Bot",
-  "PREFIX": "?",
+  "BOTNAME": "Kugisaki Nobara",
+  "FACEBOOK": "https://www.facebook.com/icecute101795",
+  "OWNERID": "100001104336961",
+  "PREFIX": "&",
   "ADMINBOT": [
-    "YOUR_FB_UID",
-    "OTHER_FB_UID",
-    "100005057593971"
+    "100001104336961",
+    ""
   ],
   "DESIGN": {
-    "Title": "BotPack",
-    "Theme": "Blue",
-    "Admin": "YOUR_NAME",
+    "Theme": "Flower",
+    "Admin": "Franz Anthony",
     "Setup": {
-      "Title": "Design your own custom terminal Titlebar for the title and must contain no numbers",
       "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, and Hacker themes to enhance your terminal logs."
     }
   },
-  "APPSTATEPATH": "appstate.json",
+  "APPSTATEPATH": "marinstate.json",
   "DEL_FUNCTION": false,
   "ADD_FUNCTION": true,
   "CONNECT_LOG": false,
@@ -39,7 +38,7 @@
     "online": true,
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18"
   },
-  "version": "1.5.1",
+  "version": "1.5.3",
   "daily": {
     "cooldownTime": 43200000,
     "rewardCoin": 500
@@ -48,8 +47,8 @@
     "cooldownTime": 1200000
   },
   "help": {
-    "autoUnsend": true,
-    "delayUnsend": 60
+    "autoUnsend": false,
+    "delayUnsend": 20
   },
   "adminUpdate": {
     "autoUnsend": true,
@@ -60,6 +59,9 @@
     "autoUnsend": true,
     "sendNoti": true,
     "timeToUnsend": 10
+  },
+  "Bot": {
+    "Title": "Marin Bot"
   },
   "math": {
     "WOLFRAM": "T8J8YV-H265UQ762K"
@@ -77,5 +79,8 @@
   "menu": {
     "autoUnsend": true,
     "delayUnsend": 60
+  },
+  "god": {
+    "enable": true
   }
 }

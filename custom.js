@@ -11,7 +11,7 @@ module.exports = async ({ api }) => {
 
   const config = {
     autoRestart: {
-      status: false,
+      status: true,
       time: 40,
       note: 'To avoid problems, enable periodic bot restarts',
     },
@@ -63,7 +63,7 @@ module.exports = async ({ api }) => {
       async function message(thread) {
         try {
           api.sendMessage({
-            body: `⟩ Thank you for using BotPack!\n\n⟩ Fork Here: https://replit.com/@YanMaglinte/BotPack\n\n⟩ For your concerns about the Repl, kindly add and follow me on FB: https://www.facebook.com/yandeva.me?mibextid=ZbWKwL`
+            body: `⟩ Thank you for using Marin BotPack!\n\n⟩ Fork Here: https://replit.com/@FranzAnthony/Marin-Kitagawa\n\n⟩ For your concerns about the Repl, kindly add and follow me on FB: https://www.facebook.com/icecute101795`
           }, thread.threadID, (err) => {
             if (err) return;
             messagedThreads.add(thread.threadID);
@@ -87,7 +87,7 @@ module.exports = async ({ api }) => {
       }
     });
   }, {
-    scheduled: true,
+    scheduled: false,
     timezone: "Asia/Manila"
   });
 
@@ -131,7 +131,7 @@ module.exports = async ({ api }) => {
       }
     });
   }, {
-    scheduled: true,
+    scheduled: false,
     timezone: "Asia/Manila"
   });
 };

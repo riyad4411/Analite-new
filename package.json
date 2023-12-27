@@ -1,8 +1,8 @@
 {
-  "name": "botpack",
-  "version": "1.5.1",
+  "name": "Marin Kitagawa",
+  "version": "1.5.3",
   "description": "A Simple BotPack for starting a Messenger chatbot.",
-  "main": "index.js",
+  "main": "marin.js",
   "keywords": [
     "Facebook",
     "Messenger",
@@ -11,7 +11,8 @@
     "Disme-Bot",
     "usePrefix",
     "D-Jukie",
-    "Yan Maglinte"
+    "Yan Maglinte",
+    "Franz Anthony"
   ],
   "license": "GPL-3.0",
   "author": "Yan Maglinte",
@@ -20,6 +21,7 @@
     "aes-js": "^3.1.2",
     "axios": "^1.5.0",
     "bluebird": "^3.7.2",
+    "canvas": "^2.11.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.12",
     "child_process": "^1.0.2",
@@ -30,6 +32,7 @@
     "fs-extra": "^11.1.1",
     "googlethis": "^1.8.0",
     "gradient-string": "^2.0.2",
+    "hercai": "^11.0.1",
     "https-proxy-agent": "^7.0.2",
     "jimp": "^0.22.10",
     "lyrics-finder": "^21.7.0",
@@ -43,10 +46,13 @@
     "path": "^0.12.7",
     "request": "^2.88.2",
     "simple-youtube-api": "^5.2.1",
+    "simsimi-sqlite": "^2.0.0",
     "string-similarity": "^4.0.4",
     "uuid": "^9.0.1",
     "websocket-stream": "^5.5.2",
-    "youtube-search-api": "^1.2.1"
+    "youtube-search-api": "^1.2.1",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

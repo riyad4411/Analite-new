@@ -1,5 +1,5 @@
-hidden = [".config", "package-lock.json"]
-run = "node index.js"
+hidden = [".config", "package-lock.json", ".gitignore", "utils"]
+run = "node marin.js"
 
 [[hints]]
 regex = "Error \\[ERR_REQUIRE_ESM\\]"
@@ -61,7 +61,7 @@ support = true
       cwd = "."
       environment = []
       pauseForSourceMap = false
-      program = "./index.js"
+      program = "./marin.js"
       request = "launch"
       sourceMaps = true
       stopOnEntry = false
@@ -78,6 +78,6 @@ pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.json}"
 start = "typescript-language-server --stdio"
 
 [deployment]
-run = ["sh", "-c", "node index.js"]
+run = ["sh", "-c", "node marin.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
