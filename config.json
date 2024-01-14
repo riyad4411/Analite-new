@@ -2,24 +2,24 @@
   "language": "en",
   "DeveloperMode": true,
   "autoCreateDB": true,
-  "allowInbox": true,
+  "allowInbox": false,
   "autoClean": true,
   "adminOnly": false,
   "encryptSt": true,
   "UPTIME": 200,
   "commandDisabled": [],
   "eventDisabled": [],
-  "BOTNAME": "Kugisaki Nobara",
-  "FACEBOOK": "https://www.facebook.com/icecute101795",
-  "OWNERID": "100001104336961",
+  "BOTNAME": "ANA TEST",
+  "FACEBOOK": "https://www.facebook.com/100084942163710",
+  "OWNERID": "100084942163710",
   "PREFIX": "&",
   "ADMINBOT": [
-    "100001104336961",
+    "100084942163710",
     ""
   ],
   "DESIGN": {
     "Theme": "Flower",
-    "Admin": "Franz Anthony",
+    "Admin": "Riyad",
     "Setup": {
       "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, and Hacker themes to enhance your terminal logs."
     }
